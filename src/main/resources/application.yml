@@ -1,0 +1,20 @@
+datasource:
+  korea:
+    url: jdbc:postgresql://localhost:6437/Abstractdb01?serverTimezone=Asia/Seoul # url? jdbc-url??
+    driverClassName: org.postgresql.Driver
+    username: test1
+    password: 1234
+  japan:
+    url: jdbc:postgresql://localhost:6437/Abstractdb02?serverTimezone=Asia/Seoul
+    driverClassName: org.postgresql.Driver
+    username: test1
+    password: 1234
+
+spring:
+  jpa:
+    hibernate.dialect: org.hibernate.dialect.PostgreSQLdialect
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
